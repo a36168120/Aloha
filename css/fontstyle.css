@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('project-material/fonts/Raleway-Medium.eot');
+    src: url('project-material/fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('project-material/fonts/Raleway-Medium.woff2') format('woff2'),
+        url('project-material/fonts/Raleway-Medium.woff') format('woff'),
+        url('project-material/fonts/Raleway-Medium.ttf') format('truetype'),
+        url('project-material/fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('project-material/fonts/Raleway-Light.eot');
+    src: url('project-material/fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('project-material/fonts/Raleway-Light.woff2') format('woff2'),
+        url('project-material/fonts/Raleway-Light.woff') format('woff'),
+        url('project-material/fonts/Raleway-Light.ttf') format('truetype'),
+        url('project-material/fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('project-material/fonts/PlayfairDisplay-Regular.eot');
+    src: url('project-material/fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('project-material/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('project-material/fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('project-material/fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('project-material/fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('project-material/fonts/PlayfairDisplay-Bold.eot');
+    src: url('project-material/fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('project-material/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('project-material/fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('project-material/fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('project-material/fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
