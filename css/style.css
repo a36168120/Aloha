@@ -30,7 +30,7 @@
 }
 
 .banner {
-  /* position: relative; */
+  position: relative;
   background-image: url(../project-material/images/banner-girl.png), url(../project-material/images/flower-bkgd.jpg);
   background-size: auto 90%, cover;
   background-position: center bottom, center;
@@ -38,27 +38,47 @@
   height: 500px;
 }
 
-.banner_text {
+.banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.footer {
-  background-color: gray;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.category-text{
+  height: 250px;
+  text-align: center;
 }
 
-/* .social-media {
+.sign-up {
+  position: relative;
+  background-image: url(../project-material/images/wave-bkgd.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: contain;   not sure!!! */
+  height: 200px;                      
+}
+
+/* .footer {
+  display: flex;
+  height: 200px;
+  background-color: gray;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info {
+
+}
+
+.social-media {
   flex-direction: column;
   display: flex;
-
+  padding: 10px;
 } */
 
-/* /* tablet width
+/* tablet width
 @media (min-widrth: 600px;)
 .logo{
   order: 1;
