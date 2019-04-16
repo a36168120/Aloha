@@ -3,40 +3,39 @@
   margin: 0 auto;
   background-color: gray; */
 
-
 .header {
   display: flex;
   width: auto;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.header-logo img {
+  width: 200px;
+}
+
+.header-contacts {
+  margin: 50px;
+}
+
 .header-contacts a {
-text-align: center;
-padding: 20px;
-color: chocolate;
-text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  color: chocolate;
+  text-decoration: none;
+}
+
+.header-carts img {
+  width: 150px;
 }
 
 .banner {
-  position: relative;
-  background-image: url(project-material/images/banner-girl.png), url(project-material/images/flower-bkgd.jpg);
-  /* background-size: cover; */
-  background-position: center;
+  /* position: relative; */
+  background-image: url(../project-material/images/banner-girl.png), url(../project-material/images/flower-bkgd.jpg);
+  background-size: auto 90%, cover;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
-}
-
-.banner-girl {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-
-.girl-image {
-  height: auto;
-  width: 70%;
-  border-style: solid;
+  height: 500px;
 }
 
 .banner_text {
@@ -46,26 +45,21 @@ text-decoration: none;
   transform: translate(-50%, -50%);
 }
 
-.footer{
+.footer {
   background-color: gray;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.social-media {
+/* .social-media {
   flex-direction: column;
   display: flex;
 
-}
+} */
 
-
-
-
-
-
-  /* /* tablet width
+/* /* tablet width
 @media (min-widrth: 600px;)
 .logo{
   order: 1;
-  width: 10%; */ 
+  width: 10%; */
