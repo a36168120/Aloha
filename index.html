@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aloha</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fontstyle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -44,14 +45,33 @@
                 Browse our current selection of products or sign-up for updates below.</p>
         </article>
 
-        <div class="catrgory-images">
-            <img src="project-material/images/mens-category.jpg" alt="MEN'S">
-            <img src="project-material/images/trends-category.jpg" alt="TRENDS">
-            <img src="project-material/images/glasses-category.jpg" alt="GLASSES">
-            <img src="project-material/images/sale-category.jpg" alt="SALES">
-            <img src="project-material/images/bags-category.jpg" alt="BAGS">
-            <img src="project-material/images/womens-category.jpg" alt="WOMEN'S">
-        </div>
+        <section class="category-images">
+            <div class="mens">
+                <a href="#">MEN'S</a>
+                <!-- <h2>MEN'S</h2> -->
+            </div>
+            <div class="trends">
+                <a href="#">TRENDS</a>
+                <!-- <h2>TRENDS</h2> -->
+            </div>
+            <div class="glasses">
+                <a href="#">GLASSES</a>
+                <!-- <h2>GLASSES</h2> -->
+            </div>
+            <div class="sales">
+                <a href="#">SALES</a>
+                <!-- <h2>SALES</h2> -->
+            </div>
+            <div class="bags">
+                <a href="#">BAGS</a>
+                <!-- <h2>BAGS</h2> -->
+            </div>
+            <div class="womens">
+                <a href="#">WOMEN'S</a>
+                <!-- <h2>WOMENS</h2> -->
+            </div>
+        </section>
+
     </section>
 
     <section>
@@ -65,16 +85,20 @@
     <section class="sign-up">
         <article class="sign-up-text">
             <h2>Sign-Ups for Updates</h2>
-            <p>Stay updated on our latest product releases, be first to find out about<br>
-                upcoming sales, and get free stylw tips from our blog. Unsubscribe at any time.
-            </p>
+            <p>Stay updated on our latest product releases, be first to find out about</p>
+            <p>upcoming sales, and get free stylw tips from our blog. Unsubscribe at any time.</p>
         </article>
+
+        <form action="#" method="POST">
+            <input type="text" name="email" placeholder="Your Email">
+            <input type="submit" name="subscribe" value="Subscribe">
+        </form>
     </section>
 
     <footer class="footer">
         <div class="footer-info">
             <p>©️ 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
-            <p>604-604-6040. info@alohaapparel.com</p>
+            <p>604-604-6040. <u>info@alohaapparel.com</u></p>
             <p>1490 W Broadway<br>Vancouver, BC, Canada</p>
         </div>
 
