@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Here is my Header */
+/*------------------------------------------------- My Header -----------------------------------------------------*/
 
 .header {
   display: flex;
@@ -44,7 +44,7 @@ body {
   order: 2;
 }
 
-/* Here is my Banner */
+/*------------------------------------------------- My Banner -----------------------------------------------------*/
 
 .banner {
   position: relative;
@@ -63,7 +63,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Here is my Category */
+/*------------------------------------------------- My Category -----------------------------------------------------*/
 
 .category-text {
   height: 300px;
@@ -85,18 +85,24 @@ body {
 .category-images {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 50vw;
 }
 
 .mens {
   background-image: url(../project-material/images/mens-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25vh;
   width: 100vw;
   position: relative;
-  box-sizing: border-box;
   border-bottom: 5px solid white;
 }
 
@@ -112,12 +118,8 @@ body {
   background-image: url(../project-material/images/trends-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25vh;
-  width: 50vw;
   position: relative;
-  box-sizing: border-box;
-  border: 5px solid white;
-  border-left-width: 0px;
+  border-right: 2.5px solid white;
 }
 
 .trends a {
@@ -132,12 +134,8 @@ body {
   background-image: url(../project-material/images/glasses-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25vh;
-  width: 50vw;
   position: relative;
-  box-sizing: border-box;
-  border: 5px solid white;
-  border-right-width: 0px;
+  border-left: 2.5px solid white;
 }
 
 .glasses a {
@@ -152,12 +150,9 @@ body {
   background-image: url(../project-material/images/sale-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25vh;
-  width: 50vw;
   position: relative;
-  box-sizing: border-box;
-  border: 5px solid white;
-  border-left-width: 0px;
+  border-top: 5px solid white;
+  border-right: 2.5px solid white;
 }
 
 .sales a {
@@ -172,12 +167,9 @@ body {
   background-image: url(../project-material/images/bags-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25vh;
-  width: 50vw;
   position: relative;
-  box-sizing: border-box;
-  border: 5px solid white;
-  border-right-width: 0px;
+  border-top: 5px solid white;
+  border-left: 2.5px solid white;
 }
 
 .bags a {
@@ -192,7 +184,6 @@ body {
   background-image: url(../project-material/images/womens-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25vh;
   width: 100vw;
   position: relative;
   border-top: 5px solid white;
@@ -206,7 +197,7 @@ body {
   text-decoration: none;
 }
 
-/* Here is my Slider */
+/*------------------------------------------------- My Slider -----------------------------------------------------*/
 
 .slider {
   height: 650px;
@@ -228,7 +219,7 @@ body {
   text-align: center;
 }
 
-/* Here is my Form */
+/*------------------------------------------------- My Form -----------------------------------------------------*/
 
 .sign-up {
   position: relative;
@@ -282,7 +273,7 @@ input[type=submit] {
   color: white;
 }
 
-/* Here is my Footer */
+/*------------------------------------------------- My Footer -----------------------------------------------------*/
 
 .footer {
   display: flex;
@@ -305,7 +296,7 @@ input[type=submit] {
   padding: 10px;
 }
 
-/* My Fonts */
+/*------------------------------------------------- My Fonts -----------------------------------------------------*/
 
 body {
   font-family: "Raleway", Arial, sans-serif;
@@ -375,7 +366,7 @@ h1 {
   color: #969696;
 }
 
-/* Mobile Width */
+/*------------------------------------------------- Mobile Width -----------------------------------------------------*/
 
 @media (max-width: 599px) {
   .header-contacts {
@@ -386,7 +377,7 @@ h1 {
   }
 }
 
-/* Tablet Width */
+/*------------------------------------------------- Tablet Width -----------------------------------------------------*/
 
 @media (min-width: 600px) {
   body {
@@ -415,9 +406,25 @@ h1 {
   .banner-text {
     width: 100vw;
   }
-  /* .main-carousel {
-    margin: 15px 10px;
-  } */
+  .box {
+    width: 25vw;
+    height: 25vw;
+  }
+  .mens {
+    width: 50vw;
+    border-right: 2.5px solid white;
+    border-bottom: none;
+  }
+  .trends {
+    border-left: 2.5px solid white;
+  }
+  .bags {
+    border-right: 2.5px solid white;
+  }
+  .womens {
+    width: 50vw;
+    border-left: 2.5px solid white;
+  }
   .carousel-cell {
     width: 50%;
   }
@@ -447,7 +454,7 @@ h1 {
   }
 }
 
-/* Desktop Width */
+/*------------------------------------------------- Desktop Width -----------------------------------------------------*/
 
 @media (min-width: 1240px) {
   body {
