@@ -17,33 +17,34 @@
 </head>
 
 <body>
-    <header class="header">
+    <!------------------------------------------------------------------- My Header -------------------------------------------------------------->
+    <header class="header" id="about">
         <div class="header-logo">
             <img src="project-material/images/aloha-logo.svg" alt="logo">
         </div>
 
         <nav class="header-contacts">
-            <a href="#">About</a>
-            <a href="#">Shop</a>
-            <a href="#">Features</a>
-            <a href="#">Update</a>
+            <a href="#about"><strong>ABOUT</strong></a>
+            <a href="#shop"><strong>SHOP</strong></a>
+            <a href="#features"><strong>FEATURES</strong></a>
+            <a href="#update"><strong>UPDATE</strong></a>
         </nav>
 
         <div class="header-cart">
             <img src="project-material/images/cart-icon.svg" alt="cart-icon">
         </div>
     </header>
-
-    <section class="banner">
+    <!------------------------------------------------------------------- My Banner -------------------------------------------------------------->
+    <section class="banner" id="shop">
         <div class="banner-text">
-            <p>New Collection</p>
-            <h1>Summer/Spring 2019</h1>
+            <p><strong>NEW COLLECTION</strong></p>
+            <h1>Spring/Summer 2019</h1>
         </div>
     </section>
 
     <section class="category">
         <article class="category-text">
-            <h2><em>Hand-Crafted</em> <strong>Style</strong></h2>
+            <h1><em>Hand-Crafted</em> <strong>Styles</strong></h1>
             <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing.
                 Browse our current selection of products or sign-up for updates below.</p>
         </article>
@@ -70,47 +71,70 @@
         </section>
 
     </section>
-
-    <section>
+    <!------------------------------------------------------------------- My Slider -------------------------------------------------------------->
+    <section class="slider" id="features">
         <div class="popular-products">
-            <h2><em>Most-Loved</em> <strong>Products</strong></h2>
+            <h1><em>Most-Loved</em> <strong>Products</strong></h1>
         </div>
-        <p>Under Progress</p>
 
         <div class="main-carousel">
             <div class="carousel-cell">
-                <img src="project-material/images/blue-silk-dress.jpg" alt="#">
-            </div>
-            <div class="carousel-cell">
                 <img src="project-material/images/checked-stretch-dress.jpg" alt="#">
+                <p>DRESSES</p>
+                <h2>Check Stretch Dress</h2>
+                <p>$129.00</p>
             </div>
             <div class="carousel-cell">
-                <img src="project-material/images/cotton-blue-shirt.jpg" alt="#">
-            </div>
-            <div class="carousel-cell">
-                <img src="project-material/images/cotton-yellow-tshirt.jpg" alt="#">
+                <img src="project-material/images/blue-hipster-backpack.jpg" alt="#">
+                <p>BAGS</p>
+                <h2>Blue Hipster Backpack</h2>
+                <p>$69.00</p>
             </div>
             <div class="carousel-cell">
                 <img src="project-material/images/demin-overall-shorts.jpg" alt="#">
+                <p>DEMIN</p>
+                <h2>Demin Overall Shorts</h2>
+                <p>$89.00</p>
             </div>
             <div class="carousel-cell">
                 <img src="project-material/images/pink-dotted-dress.jpg" alt="#">
+                <p>DRESSES</p>
+                <h2>Pink Dotted Dress</h2>
+                <p>$99.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="project-material/images/blue-silk-dress.jpg" alt="#">
+                <p>DRESSES</p>
+                <h2>Blue Silk Dress</h2>
+                <p>$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img src="project-material/images/cotton-yellow-tshirt.jpg" alt="#">
+                <p>SHIRT</p>
+                <h2>Cotton Yellow Tshirt</h2>
+                <p>$49.00</p>
             </div>
             <div class="carousel-cell">
                 <img src="project-material/images/stretch-knit-dress.jpg" alt="#">
+                <p>DRESSES</p>
+                <h2>Stretch Knit Dress</h2>
+                <p>$69.00</p>
             </div>
-            <div>
-                <img src="project-material/images/blue-hipster-backpack.jpg" alt="#">
+            <div class="carousel-cell">
+                <img src="project-material/images/cotton-blue-shirt.jpg" alt="#">
+                <p>SHIRT</p>
+                <h2>Cotton Blue Shirt</h2>
+                <p>$39.00</p>
             </div>
         </div>
 
     </section>
-
-    <section class="sign-up">
+    <!------------------------------------------------------------------- My Form -------------------------------------------------------------->
+    <section class="sign-up" id="update">
         <article class="sign-up-text">
-            <h2>Sign-Ups for Updates</h2>
-            <p>Stay updated on our latest product releases, be first to find out about</p>
-            <p>upcoming sales, and get free stylw tips from our blog. Unsubscribe at any time.</p>
+            <h1><em>Sign-up for</em> <strong>Updates</strong></h1>
+            <p>Stay updated on our latest product releases, be first to find out about
+                upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         </article>
 
         <form action="#" method="POST">
@@ -118,20 +142,20 @@
             <input type="submit" name="subscribe" value="Subscribe">
         </form>
     </section>
-
+    <!------------------------------------------------------------------- My Footer -------------------------------------------------------------->
     <footer class="footer">
         <div class="footer-info">
             <p>©️ 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
             <p>604-604-6040. <u>info@alohaapparel.com</u></p>
-            <p>1490 W Broadway<br>Vancouver, BC, Canada</p>
+            <div>1490 W Broadway<br>Vancouver, BC, Canada</div>
         </div>
 
         <div class="social-media">
-            <i class="fab fa-pinterest fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
-            <i class="fab fa-twitter fa-2x"></i>
-            <i class="fab fa-facebook-square fa-2x"></i>
-            <i class="fab fa-google-plus-g fa-2x"></i>
+            <i class="fab fa-facebook-f fa-sm"><span class="icon-text">Facebook</span></i>
+            <i class="fab fa-twitter fa-sm"><span class="icon-text">Twitter</span></i>
+            <i class="fab fa-instagram fa-sm"><span class="icon-text">Instagram</span></i>
+            <i class="fab fa-pinterest fa-sm"><span class="icon-text">Pinterest</span></i>
+            <i class="fab fa-google-plus-g fa-sm"><span class="icon-text">Google+</span></i>
         </div>
     </footer>
 

@@ -1,17 +1,5 @@
-/* .container {
-  max-width: 1240px;
-  margin: 0 auto;
-  background-color: gray; */
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Mobile Style */
-.carousel-cell {
-  width: 100%;
-  margin-right: 10px;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
 img {
@@ -29,46 +17,69 @@ body {
   width: auto;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px 10px 0px;
 }
 
 .header-logo img {
-  width: 200px;
+  width: 150px;
+  order: 1;
 }
 
 .header-contacts {
-  margin: 50px;
+  margin: 0 auto;
+  padding: 10px;
+  order: 3;
+  margin-top: 10px;
 }
 
 .header-contacts a {
   text-align: center;
   padding: 20px;
-  color: chocolate;
+  color: #e2574c;
   text-decoration: none;
 }
 
-.header-carts img {
-  width: 150px;
+.header-cart img {
+  width: 60px;
+  order: 2;
 }
+
+/* Here is my Banner */
 
 .banner {
   position: relative;
   background-image: url(../project-material/images/banner-girl.png), url(../project-material/images/flower-bkgd.jpg);
-  background-size: auto 90%, contain;
+  background-size: auto 90%, cover;
   background-position: center bottom, center;
   background-repeat: no-repeat, repeat;
-  height: 500px;
+  height: 450px;
 }
 
 .banner-text {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* Here is my Category */
+
 .category-text {
-  height: 250px;
+  height: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-text p {
+  line-height: 2;
+  margin: 0px 70px;
+}
+
+.category-text h2 {
+  padding-top: 30px;
 }
 
 .category-images {
@@ -80,116 +91,175 @@ body {
 
 .mens {
   background-image: url(../project-material/images/mens-category.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 100vw;
   position: relative;
+  box-sizing: border-box;
+  border-bottom: 5px solid white;
 }
 
 .mens a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
 .trends {
   background-image: url(../project-material/images/trends-category.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 50vw;
   position: relative;
+  box-sizing: border-box;
+  border: 5px solid white;
+  border-left-width: 0px;
 }
 
 .trends a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
 .glasses {
   background-image: url(../project-material/images/glasses-category.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 50vw;
   position: relative;
+  box-sizing: border-box;
+  border: 5px solid white;
+  border-right-width: 0px;
 }
 
 .glasses a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
 .sales {
   background-image: url(../project-material/images/sale-category.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 50vw;
   position: relative;
+  box-sizing: border-box;
+  border: 5px solid white;
+  border-left-width: 0px;
 }
 
 .sales a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
 .bags {
   background-image: url(../project-material/images/bags-category.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 50vw;
   position: relative;
+  box-sizing: border-box;
+  border: 5px solid white;
+  border-right-width: 0px;
 }
 
 .bags a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
 .womens {
   background-image: url(../project-material/images/womens-category.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 100vw;
   position: relative;
+  border-top: 5px solid white;
 }
 
-.womans a {
+.womens a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
+
+/* Here is my Slider */
+
+.slider {
+  height: 650px;
+}
+
+.popular-products {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.main-carousel {
+  height: 55vh;
+  margin: 90px 0px 70px;
+}
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+/* Here is my Form */
 
 .sign-up {
   position: relative;
   background-image: url(../project-material/images/wave-bkgd.jpg);
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 200px;
+  height: 330px;
   text-align: center;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.sign-up p {
+  padding: 0px 60px;
+  line-height: 1.7;
+  color: white;
 }
 
 form {
   flex-direction: row;
   border-radius: 20px;
   background-color: white;
-  padding: 10px;
+  padding: 5px;
+  margin: 0 auto;
   display: inline;
+  margin-top: 10px;
 }
 
 input[type=text] {
@@ -200,34 +270,217 @@ input[type=text] {
 }
 
 input[type=submit] {
-  background: orangered;
+  background: #e2574c;
   color: white;
   border-radius: 20px;
-  padding: 5px;
+  padding: 10px;
   align-items: center;
 }
+
+.social-media i {
+  padding: 30px 10px;
+  color: white;
+}
+
+/* Here is my Footer */
 
 .footer {
   display: flex;
-  height: 200px;
-  background-color: gray;
-  flex-direction: row;
+  height: 330px;
+  background-color: #242424;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
+}
+
+.footer-info {
+  width: 100%;
+  text-align: center;
 }
 
 .social-media {
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   padding: 10px;
 }
 
+/* My Fonts */
+
 body {
   font-family: "Raleway", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #2d2d2d;
 }
 
-/* tablet width
-@media (min-widrth: 600px;)
-.logo{
-  order: 1;
-  width: 10%; */
+.banner-text {
+  color: white;
+}
+
+.banner-text p {
+  font-size: 20px;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+}
+
+h1, h2 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+}
+
+h2 {
+  color: #e2574c;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.category-text h1 em {
+  font-style: italic;
+}
+
+.category-images a {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+
+.main-carousel p {
+  color: #969696;
+  font-weight: 500;
+}
+
+.sign-up-text h1 {
+  color: white;
+}
+
+::placeholder {
+  color: #969696;
+}
+
+.footer-info p {
+  color: white;
+  font-family: "Playfair Display";
+  /* font-weight: bold; */
+}
+
+.footer div {
+  font-family: "Playfair Display";
+  /* font-weight: bold; */
+  color: #969696;
+}
+
+/* Mobile Width */
+
+@media (max-width: 599px) {
+  .header-contacts {
+    border-top: 1px solid #ccc6c5;
+  }
+  .icon-text {
+    display: none;
+  }
+}
+
+/* Tablet Width */
+
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .header {
+    padding-bottom: 10px;
+  }
+  .header-logo img {
+    order: 1;
+    width: 130px;
+  }
+  .header-contacts {
+    order: 2;
+  }
+  .header-contacts a {
+    padding: 10px;
+  }
+  .header-cart {
+    order: 3;
+    width: 50px;
+  }
+  .banner {
+    height: 400px;
+  }
+  .banner-text {
+    width: 100vw;
+  }
+  /* .main-carousel {
+    margin: 15px 10px;
+  } */
+  .carousel-cell {
+    width: 50%;
+  }
+  .carousel-cell h2 {
+    margin: 0px 50px;
+  }
+  .footer {
+    flex-direction: row;
+    height: 300px;
+    padding: 0px 20px;
+  }
+  .footer-info {
+    text-align: left;
+    line-height: 1.5;
+  }
+  .social-media {
+    flex-direction: column;
+  }
+  .social-media i {
+    padding: 10px 10px;
+  }
+  .icon-text {
+    margin: 10px auto;
+    font-family: "Raleway";
+    font-weight: 500;
+    padding-left: 10px;
+  }
+}
+
+/* Desktop Width */
+
+@media (min-width: 1240px) {
+  body {
+    font-size: 16px;
+  }
+  .header {
+    padding: 20px 30px;
+  }
+  .header-contacts a {
+    padding: 25px;
+  }
+  .banner {
+    background-size: auto 90%, contain;
+    height: 530px;
+  }
+  .category-text {
+    padding: 0px 270px;
+    height: 250px;
+  }
+  .carousel-cell {
+    width: 25%;
+  }
+  .carousel-cell h2 {
+    margin: 0px 20px;
+  }
+  .sign-up-text {
+    padding: 0px 273px;
+  }
+  .footer {
+    padding: 50px;
+    height: 200px
+  }
+  .footer-info {
+    line-height: 1.5;
+  }
+}
