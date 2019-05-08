@@ -10,6 +10,38 @@ body {
   box-sizing: border-box;
 }
 
+/*------------------------------------------------- Screen Reader -----------------------------------------------------*/
+:focus {
+  outline: dotted;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: 15px;
+  left: 5px;
+  top: 5px;
+  color: white;
+  background-color: gray;
+  padding: 10px;
+  text-decoration: none;
+  width: auto;
+  border-style: double;
+  z-index: 100000; /* above all content */
+}
+
+#main[tabindex="1"]:focus {
+  outline: 10px ;
+}
+
 /*------------------------------------------------- My Header -----------------------------------------------------*/
 
 .header {

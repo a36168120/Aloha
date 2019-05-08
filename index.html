@@ -17,14 +17,17 @@
 </head>
 
 <body>
-    <!------------------------------------------------------------------- My Header -------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------- My Header ------------------------------------------------------------ -->
     <header class="header" id="about">
+
+        <a class="screen-reader-text" href="#main">Skip to main content</a>
+        
         <div class="header-logo">
-            <img src="project-material/images/aloha-logo.svg" alt="logo">
+           <h1><img src="project-material/images/aloha-logo.svg" alt="logo"></h1>
         </div>
 
         <nav class="header-contacts">
-            <a href="#about"><strong>ABOUT</strong></a>
+            <a href="#about"><strong>ABOUT US</strong></a>
             <a href="#shop"><strong>SHOP</strong></a>
             <a href="#features"><strong>FEATURES</strong></a>
             <a href="#update"><strong>UPDATE</strong></a>
@@ -38,16 +41,16 @@
     <section class="banner" id="shop">
         <div class="banner-text">
             <p><strong>NEW COLLECTION</strong></p>
-            <h1>Spring/Summer 2019</h1>
+            <h2>Spring/Summer 2019</h2>
         </div>
     </section>
 
-    <section class="category">
-        <article class="category-text">
-            <h1><em>Hand-Crafted</em> <strong>Styles</strong></h1>
+    <main id="main" class="category">
+        <div class="category-text">
+            <h2><em>Hand-Crafted</em> <strong>Styles</strong></h2>
             <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing.
                 Browse our current selection of products or sign-up for updates below.</p>
-        </article>
+            </div>
 
         <section class="category-images">
 
@@ -77,11 +80,11 @@
 
         </section>
 
-    </section>
+    </main>
     <!------------------------------------------------------------------- My Slider -------------------------------------------------------------->
     <section class="slider" id="features">
         <div class="popular-products">
-            <h1><em>Most-Loved</em> <strong>Products</strong></h1>
+            <h2><em>Most-Loved</em> <strong>Products</strong></h2>
         </div>
 
         <div class="main-carousel">
@@ -139,14 +142,17 @@
     <!------------------------------------------------------------------- My Form -------------------------------------------------------------->
     <section class="sign-up" id="update">
         <article class="sign-up-text">
-            <h1><em>Sign-up for</em> <strong>Updates</strong></h1>
+            <h2><em>Sign-up for</em> <strong>Updates</strong></h2>
             <p>Stay updated on our latest product releases, be first to find out about
                 upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         </article>
 
         <form id="form" action="#" method="POST">
+            <label for="email">
             <input id="email" type="text" name="email" placeholder="Your Email">
             <input type="submit" name="subscribe" value="Subscribe">
+            </form>
+            <label>
         </form>
     </section>
     <!------------------------------------------------------------------- My Footer -------------------------------------------------------------->
@@ -166,6 +172,7 @@
         </div>
     </footer>
 
+    <script src="js/tota11y.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/main.js"></script>
 </body>
